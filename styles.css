@@ -1,0 +1,111 @@
+/* General body styles for background and font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    color: #333;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+form:hover {
+    transform: translateY(-5px); /* Animation on hover */
+}
+
+/* Labels for form fields */
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Input, select, and textarea styles */
+input, select, textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #f093fb;
+    box-shadow: 0 0 5px rgba(240, 147, 251, 0.7);
+    outline: none;
+}
+
+/* Button styles */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #f5576c, #f093fb);
+    transform: scale(1.05);
+}
+
+/* Container for ingredient items */
+.ingredients-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual ingredient item styling */
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Ingredient item hover effect */
+.ingredient-item:hover {
+    transform: scale(1.05);
+}
+
+/* Checkbox alignment */
+.ingredient-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Label styling */
+.ingredient-item label {
+    font-size: 1rem;
+    color: #333;
+}

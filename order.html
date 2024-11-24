@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="order-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="order-container">
+        <h1>Thank You for Your Order!</h1>
+        <div class="order-details">
+            <h2>Order Summary</h2>
+            <p><strong>Name:</strong> <span id="customer-name"></span></p>
+            <p><strong>Size:</strong> <span id="smoothie-size"></span></p>
+            <p><strong>Ingredients:</strong> <span id="smoothie-ingredients"></span></p>
+            <p><strong>Special Instructions:</strong> <span id="special-instructions"></span></p>
+        </div>
+        <button onclick="window.location.href='index.html';">Order Another Smoothie</button>
+    </div>
+    <script src="order-script.js"></script>
+</body>
+</html>
